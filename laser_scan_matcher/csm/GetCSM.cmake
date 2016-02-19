@@ -16,7 +16,7 @@ function( download_and_compile_csm )
         STAMP_DIR ${CSM_BINARY_DIR}/stamp
         SOURCE_DIR ${CSM_BINARY_DIR}/src
         #--Download step -----------------------------------------------------------
-        GIT_REPOSITORY https://github.com/AndreaCensi/csm.git
+        GIT_REPOSITORY https://github.com/linzhibo/csm.git
         GIT_TAG 56919d39f69d1d91c4a909750ff8516c42b3f0e9
         #-- Update/Patch command ---------------------------------------------------
         PATCH_COMMAND patch -p0 -d ${CSM_BINARY_DIR}/src < ${CSM_PATCH_DIR}/patch_a && patch -p0 -d ${CSM_BINARY_DIR}/src < ${CSM_PATCH_DIR}/patch_b && patch -p0 -d ${CSM_BINARY_DIR}/src < ${CSM_PATCH_DIR}/patch_c && patch -p0 -d ${CSM_BINARY_DIR}/src < ${CSM_PATCH_DIR}/patch_d
